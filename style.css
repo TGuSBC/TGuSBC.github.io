@@ -97,6 +97,8 @@ h2 {
   background-color: #212936;
 
   padding: 25px;
+
+  transition: ease 0.3s;
 }
 
 .containers p {
@@ -108,6 +110,12 @@ h2 {
   margin-bottom: 26px;
 
   max-width: 250px;
+}
+
+.containers:hover {
+  transform: scale(1.01);
+
+  box-shadow: 0 0 10px white;
 }
 
 .image-wrapper img {
