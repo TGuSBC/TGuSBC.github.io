@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  background-color: #121826;
+
+  background-image: url(resources/Background_image.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  text-align: center;
+
+  padding: 40px;
+  max-width: 600px;
+}
+
+header h1 {
+  color: #e5e7eb;
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+header p {
+  color: #9da3ae;
+
+  font-size: 20px;
+
+  margin-top: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: row;
+
+  gap: 60px;
+}
+
+.span {
+  display: inline-block;
+
+  font-size: 25px;
+
+  border-radius: 100%;
+
+  padding: 20px;
+
+  margin-bottom: 26px;
+}
+
+#handemoji {
+  background-color: #fceed8;
+}
+
+#goalemoji {
+  background-color: #dee9fc;
+}
+
+#chatemoji {
+  background-color: #fbe5e6;
+}
+
+h2 {
+  color: #e5e7eb;
+  margin-bottom: 26px;
+}
+
+.containers {
+  width: 378px;
+
+  border-radius: 20px;
+
+  background-color: #212936;
+
+  padding: 25px;
+}
+
+.containers p {
+  color: #d2d5da;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  margin-bottom: 26px;
+
+  max-width: 250px;
+}
+
+.image-wrapper img {
+  border-radius: 16px;
+
+  width: 325px;
+}
+
+/*TABLET*/
+@media (max-width: 1024px) {
+  body {
+    background-repeat: repeat-y;
+  }
+
+  section {
+    flex-wrap: wrap;
+  }
+}
+/*FIM TABLET*/
+
+/*MOBILE*/
+@media (max-width: 768px) {
+  body {
+    background-repeat: repeat;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .containers {
+    max-width: 330px;
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .span {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  img {
+    max-width: 280px;
+    margin-left: 9px;
+  }
+}
+/*FIM MOBILE*/
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
